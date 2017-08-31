@@ -1,0 +1,9 @@
+$(document).ready(function(){
+  $(".btn").click(function(){
+    $(".menu").toggleClass("enable");
+  });
+  $(".btnnav").click(function(){
+    $(".menu").toggleClass("enable");
+    $(".btn").toggleClass("active");
+  });
+});
