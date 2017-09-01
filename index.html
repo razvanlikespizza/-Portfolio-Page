@@ -69,10 +69,10 @@
       <div id="aboutme" class="">
          <div class="full-width">
             <hr>
-            <h3 class="about-tit wow fadeIn">Some useless stuff 'bout me...</h3>
+            <h3 class="about-tit wow fadeIn">Some stuff about me...</h3>
             <h1 class="about-title wow fadeIn">Who am I?</h1>
             <p class="about-para wow fadeIn">
-               How I said, my name is Razvan and I am from a country called "Romania" (ew, I know). Currently, I am a student who loves coding of any type, and not just coding. Everything that has something in common with technology/IT.
+               How I said, my name is Razvan and I am from a country called Romania. Currently, I am a student who loves coding of any type, and not just coding. Everything that has something in common with technology/IT.
             </p>
             <h1 class="about-title wow fadeIn">How I started coding?</h1>
             <p class="about-para wow fadeIn">
@@ -163,6 +163,7 @@
             <label for="text">Message</label>
          </div>
          <button type="button" onclick="sent()" name="button" id="submit" class="submit">Send it</button>
+         <p id="pbtn" style="text-align: center; color: grey; display: none; margin: 0 auto;">Message sent <i class="fa fa-check-square"></i>
          <div class="icons">
             <a href="https://github.com/razvanlikespizza" target="_blank"><img width="30px" height="30px" src="img/icons/github.png" alt=""></a>
             <a href="https://api.whatsapp.com/send?phone=40760594797&text=I%20want%20to%20talk%20with%20you." target="_blank"><img title="+4072888466" width="30px" height="30px" src="img/icons/whatsapp.png" alt=""></a>
@@ -185,6 +186,9 @@
       <script>
       	function sent() {
             document.getElementById("submit").innerHTML = "Message sent" + '<i style="margin-left: 5px;" class="fa fa-check-square"></i>';
+              document.getElementById("submit").style.display = "none";
+              document.getElementById("pbtn").style.display = "block";
+              document.getElementById("pbtn").style.textAlign = "center";
       	}
       </script>
    <!--    -->
