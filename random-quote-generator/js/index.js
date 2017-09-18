@@ -5,7 +5,7 @@ $(document).ready(function(){
     json.forEach(function(val) {
       if (val.content.length < 200) {
       $(".twitter").css("visibility", "initial");
-      $("#orders").html('<h1 class="quote">❝ </h1>' + val.content + "<h1>❞</h1>");
+      $("#orders").html('<h1 class="quote">❝ </h1>' + val.content + '<h1 class="quote"> ❝</h1>');
       var tweetMSG = val.content.replace("<p>", "").replace("</p>", "");
       var tweet = encodeURIComponent(tweetMSG);
     $(".hand a").attr("href", "https://twitter.com/intent/tweet?text=" + tweet);
