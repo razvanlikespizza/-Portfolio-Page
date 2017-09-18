@@ -1,7 +1,13 @@
 $(document).ready(function(){
   $("#content").click(function(mouse) {
-    $.ajaxSetup({ cache: false });
-    $.getJSON("https://quotesondesign.com/wp-json/posts?            filter[orderby]=rand&filter[posts_per_page]=1", function(json) {
+    $.ajaxSetup({
+      cache: false 
+    });
+    gimmeQuote();
+ });
+});
+  function gimmeQuote() {
+    $.getJSON("https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1", function(json) {
     json.forEach(function(val) {
       if (val.content.length < 200) {
       $(".twitter").css("visibility", "initial");
@@ -11,9 +17,9 @@ $(document).ready(function(){
     $(".hand a").attr("href", "https://twitter.com/intent/tweet?text=" + tweet);
       } else {
         console.log("quote is too long");
+        gimmeQuote();
       }
       console.log("button pressed, you should get a new quote");
       });
     });
-  });
-});
+  }
