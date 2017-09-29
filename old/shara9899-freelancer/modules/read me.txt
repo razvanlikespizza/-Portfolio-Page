@@ -1,0 +1,15 @@
+So, I did your modules, and here is a little guide to easily implement it:
+
+First, let's start with the little icons, I did put each one of them in single files, and they are copies of the ones in your page, so this way it won't mess up your CSS or anything, but I added to them a class that is the name of the icon, for example, the facebook icon has now a class named "facebook", this way you can simply adjust your CSS or even your Javascript in the future to manipulate them one by one.
+
+The timer is a little more complicated, there is 2 files there, one is the timer.js, which is the Javascript code for the timer to work, here is how to import it into your website:
+
+<script src="folder/timer.js"></script>
+
+Just replace the "folder" for ther folder where you store the Javascript, if you maintain as I am sending you, it should be "/modules/time/" and then just add "timer.js", easy and simple.
+
+The other file is called "time.html" and it's an example of the clock working properly, all you need to do is add on your "body" tag the following: onload="startTime()"
+
+and after that put this code wherever you want your clock to show up: <div id="clock"></div>
+
+Enjoy =]

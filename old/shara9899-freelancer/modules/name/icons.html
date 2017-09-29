@@ -1,0 +1,81 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
+    <script type="text/javascript" src="modules/name/eh.js"></script>
+    <link href="jquery-ui.css" rel="stylesheet" />
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="https://raw.githubusercontent.com/furf/jquery-ui-touch-punch/master/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('#sortable').sortable({
+                placeholder: 'placeholder',
+                axis: 'y',
+                opacity: 1,
+                items: 'li[data-value="iconchange"]'
+            });
+                $('#sortablee').sortable({
+                placeholder: 'placeholderr',
+                axis: 'y',
+                opacity: 1,
+                items: 'li[data-value="iconchangee"]'
+            });
+            init();
+        });
+    function touchHandler(event) {
+    var touch = event.changedTouches[0];
+
+    var simulatedEvent = document.createEvent("MouseEvent");
+        simulatedEvent.initMouseEvent({
+        touchstart: "mousedown",
+        touchmove: "mousemove",
+        touchend: "mouseup"
+    }[event.type], true, true, window, 1,
+        touch.screenX, touch.screenY,
+        touch.clientX, touch.clientY, false,
+        false, false, false, 0, null);
+
+    touch.target.dispatchEvent(simulatedEvent);
+    event.preventDefault();
+}
+
+function init() {
+    document.addEventListener("touchstart", touchHandler, true);
+    document.addEventListener("touchmove", touchHandler, true);
+    document.addEventListener("touchend", touchHandler, true);
+    document.addEventListener("touchcancel", touchHandler, true);
+}
+    </script>
+        <form id="form1" runat="server" style="float: left;">
+        <ul id="sortable">
+            <li data-value="iconchange"><img height="50" src="https://cdn-images-1.medium.com/max/1024/1*2Qxx4v2V5A4CJSwlQiHo1Q.png" width="50" class="pandora"></li>
+            <li data-value="iconchange"><img src="http://jumpwiremedia.com/wp-content/uploads/2016/02/snapchat-dreamstale62.png" width="50" class="snapchat"></li>
+            <li data-value="iconchange"><img src="http://jumpwiremedia.com/wp-content/uploads/2016/02/soundcloud-dreamstale63.png" width="50" class="soundcloud"></li>
+            <li data-value="iconchange"><img src="http://jumpwiremedia.com/wp-content/uploads/2016/02/instagram-dreamstale43.png" width="50" class="instagram"></li>
+            <li data-value="iconchange"><img src="http://jumpwiremedia.com/wp-content/uploads/2016/02/facebook-dreamstale25.png" width="50" class="facebook"></li>
+        </ul>
+        </form>
+                <form id="form2" runat="server" style="float:right; margin-top: 0px;">
+        <ul id="sortablee">
+            <li data-value="iconchangee"><img height="50" src="http://jumpwiremedia.com/wp-content/uploads/2016/02/google-dreamstale37.png" width="50" class="googleplus"></li>
+            <li data-value="iconchangee"><img src="http://jumpwiremedia.com/wp-content/uploads/2016/02/twitter-dreamstale71.png" width="50" class="twitter"></li>
+            <li data-value="iconchangee"><img src="http://jumpwiremedia.com/wp-content/uploads/2016/02/tumblr-dreamstale70.png" width="50" class="tumblr"></li>
+            <li data-value="iconchangee"><img src="http://jumpwiremedia.com/wp-content/uploads/2016/02/youtube2-dreamstale87.png" width="50" class="youtube"></li>
+            <li data-value="iconchangee"><img src="http://jumpwiremedia.com/wp-content/uploads/2016/02/pinterest-dreamstale57.png" width="50" class="pinterest"></li>
+        </ul>
+        </form>
+    <style type="text/css">
+    * {
+    	margin: 0;
+    	padding: 0;
+    }
+    	li {
+    		color: white;
+    	}
+    	ul {
+  list-style-type: none;
+}
+li {
+
+display: block;
+}
+</style>
