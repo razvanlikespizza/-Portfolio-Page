@@ -1,0 +1,84 @@
+#sidebar {
+	display: block;
+	position: absolute;
+	width: 300px;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.6);
+	z-index: 2;
+	top: 0px;
+	right: -300px;
+	transition: right 0.5s cubic-bezier(0.99, -0.15, 0, 1.1)
+}
+.sidebarvisible {
+  	top: 0px !important;
+	right : 0px !important;
+	transition: right 0.5s cubic-bezier(0.99, -0.15, 0, 1.1)
+}
+.sidebar-button {
+	position: absolute;
+	display: inline-block;
+	width: 30px;
+	height: 35px;
+	top: 0px;
+	right: 300px;
+    padding: 45px 20px 0 0px;
+	cursor: pointer;
+}
+.sidebar-button-span {
+	display: block;
+	height: 3px;
+	margin-bottom: 7px;
+	background-color: white;
+
+}
+.ul-sidebar .li-sidebar {
+	list-style-type: none;
+	padding: 15px;
+	background-color: rgba(214, 214, 214, 0.6);
+	margin-bottom: 2px;
+	transition: 0.09s;
+}
+.ul-sidebar .a-sidebar{
+	font-weight: 400;
+	text-decoration: none;
+}
+.ul-sidebar .li-sidebar:hover {
+	background-color: black;
+	border-right: 3px solid white;
+	transition: 0.2s;
+}
+a {color:#2d3a2e;}      /* unvisited link */
+
+a:visited {color:#2d3a2e;}  /* visited link */
+
+a:hover {color:white;
+		 transition: 0.1s;}  /* mouse over link */
+
+a:active {color:#ccc;}  /* selected link */
+
+
+
+@media only screen and (max-width: 660px) {
+#sidebar {
+	display: block;
+	position: absolute;
+	width: 150px;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.6);
+	z-index: 2;
+	top: 0px;
+	right: -150px;
+	transition: right 0.5s cubic-bezier(0.99, -0.15, 0, 1.1)
+}
+.sidebar-button {
+	position: absolute;
+	display: inline-block;
+	width: 30px;
+	height: 35px;
+	top: 0px;
+	right: 150px;
+    padding: 50px 20px 0 0px;
+	cursor: pointer;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+}

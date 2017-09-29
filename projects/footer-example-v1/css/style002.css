@@ -1,0 +1,58 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.footer {
+	background-color: #333333;
+	min-height: 500px;
+	margin-top: 2%;
+	color: white;
+	width: 100%;
+}
+h1 {
+    font-family: 'Lato', sans-serif;
+}
+h2, h3, h4 {
+	font-family: 'Josefin Slab', serif;
+	padding-top: 20px;
+}
+h2 {
+	font-family: 'Lato', sans-serif;
+}
+.special {
+	font-family: 'Josefin Slab', serif;
+	padding-top: 10px;
+}
+.col {
+	display: inline;
+	float: left;
+	padding-right: 10%;
+	text-align: left;
+	margin-top: 7%;
+
+}
+.container {
+	margin:0% 10% 0% 24%;
+}
+hr {
+	width: 70%;
+	margin: 0 auto;
+}
+.line {
+	padding-top: 16%;
+
+}
+.logos {
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	margin-top: 80px;
+}
+img {
+	width: 50px;
+	padding-right: 15px;
+	
+}
+p {
+	margin-top: 60px;
+}

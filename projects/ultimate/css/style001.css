@@ -1,0 +1,142 @@
+/* Here is set margin/padding for all elements to 0 */
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', sans-serif;
+}
+/* REM default */
+html {
+	font-size: 16px;
+}
+/* NO OVERFLOW */
+body {
+	overflow-x: hidden;
+		min-width: 250px;
+		max-width: 100%;
+
+}
+.container {
+	position: relative !important;
+}
+/* when selecting text edit */
+::-moz-selection {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+::selection {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+/* disable blue border */
+button:focus {outline:0;}
+/* Here we style the background */
+.background {
+	background: url(../img/background_image1.jpg);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+/* styling the text container */
+.primary-text {
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+/* here we style the big title */
+h1.title {
+	font-size: 6.5rem;;
+	text-transform: uppercase;
+	color: white;
+	letter-spacing: 15px;
+	margin-top: 10%;
+	font-weight: 900;
+}
+/* here we style the paragraph under the big header text */
+p.paragraph {
+	font-size: 2.5rem;;
+	text-transform: uppercase;
+	color: white;
+	letter-spacing: 15px;
+	font-weight: 100;
+	background-color: rgba(255, 255, 255, 0.1);
+	display: inline-block;
+	margin-top: 30px;
+}
+/* here we style the "get started" button */
+.start_btn {
+	display: inline-block;
+	border: 3px solid white;
+	background-color: transparent;
+	width: 10rem;
+	height: 3rem;
+	/*border-top-right-radius: 20%;
+	border-top-left-radius: 20%;
+	border-bottom-left-radius: 20%;
+	border-bottom-right-radius: 20%; */
+    border: 1px solid white;
+    border-radius: 10px 10px 10px 10px;
+	color: white;
+	font-weight: 400;
+	font-size: 1.3rem;
+	margin-top: 70px;
+	-webkit-transition-duration: 0.5s;
+	     -o-transition-duration: 0.5s;
+	        transition-duration: 0.5s;
+	background-color: rgba(255, 255, 255, 0.09);
+}
+.start_btn a {
+	text-decoration: none;
+	color: white;
+}
+.start_btn:hover {
+	-webkit-transition-duration: 0.5s;
+	     -o-transition-duration: 0.5s;
+	        transition-duration: 0.5s;
+	background-color: rgba(255, 255, 255, 1);
+	color: black;
+	cursor: pointer;
+}
+/* top left LOGO */
+.logo {
+	color: white;
+	font-weight: 700;
+	font-size: 2rem;
+	padding: 20px 0 0 20px;
+}
+#copy {
+	color: white; 
+	position: absolute; 
+	left: 10px; 
+	bottom: 10px; 
+	opacity: 0.5;
+	font-size: 12px;
+}
+@media only screen and (max-width: 660px) {
+	h1.title {
+	font-size: 2.5rem;;
+	text-transform: uppercase;
+	color: white;
+	letter-spacing: 15px;
+	margin-top: 20%;
+	font-weight: 900;
+	padding-left: 15px;
+}
+.logo {
+	visibility: hidden;
+	color: white;
+	font-weight: 700;
+	font-size: 2rem;
+	padding: 20px 0 0 20px;
+}
+p.paragraph {
+	font-size: 1.5rem;;
+	text-transform: uppercase;
+	color: white;
+	letter-spacing: 15px;
+	font-weight: 100;
+	background-color: rgba(255, 255, 255, 0.1);
+	display: inline-block;
+	margin-top: 30px;
+}
+}

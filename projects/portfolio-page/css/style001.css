@@ -1,0 +1,383 @@
+/* This is for margin and padding 0 default and the font for ALL */
+ * {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+
+}
+body {
+	overflow-x: hidden;
+}
+
+/*  HEADER NAVIGATION START */
+
+/* This remove the dots of tehe ALL, overflow is hidden ,sets some padding for the header ALL,and the background color for it */
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    padding: 10px 0 10px 0;
+    background-color: #333;
+    border-bottom: 3px solid #ea1646;
+    margin-bottom: 0 !important;
+    position: fixed;
+    width: 100%;
+}
+
+/* THis makes the navigation items go to the right */
+li {
+	float: right;
+	padding-top: 4px;
+}
+/*Here I style the anchor elements for header ,like color ,font */
+li a {
+	padding: 10px;
+	display: inline;
+	color: white;
+	font-weight: bold;
+	text-decoration: none !important;
+}
+/* Here I remove the text -decoration and color after clicking it and */
+li a:visited {
+	color:white;
+	text-decoration: none !important;
+	}  /* visited link */
+li a:hover {
+	color:grey;
+	text-decoration: none !important;
+	transition-duration: 1s;
+	}  /* mouse over link */
+li a:active {
+    color:grey;
+    text-decoration: none !important;
+}  /* selected link */
+/* This center the items of navigation adding margin */
+.list-items, .hide {
+	margin: 0 15% 0 15%;
+}
+/* Here I style the LOGO from the NAVIGATION */
+.logo {
+	width: 30px;
+	height: auto;
+	vertical-align: middle;
+	margin-top: -10px;
+	margin-right: 4px;
+}
+/* FONT SIZE FOR NAVTIGATION , ALL THE NAVIGATION EDITS */
+.navigation {
+	font-size: 16px;
+}
+/*  HEADER NAVIGATION END */
+
+/* Show case part,here is my presentiation  */
+.bk {
+	background-image: url("../img/mars1.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	min-height: 800px;
+	border-bottom: 5px solid #5a326b;
+}
+/* Big introductive text */
+.title {
+ 	font-size: 4em;
+ 	font-weight: bold;
+ 	color: white;
+ 	text-align: center;
+ 	margin-top: 16%;
+ }
+ /* Paragraph under the big text */
+ .para {
+ 	font-size: 1.3em;
+ 	color: white;
+ 	text-align: center;
+ 	margin: 2% 20% 2% 20%;
+ }
+ /* Image with click me bitch */
+ .show img {
+ 	display: block;
+ 	margin: auto;
+ }
+ /* Style for carousel */
+  /* Title portfolio */
+ .porttitle {
+ 	padding: 0;
+ 	margin-top: 0.6em;
+ 	font-size: 4em;
+ 	font-weight: bold;
+ 	color: #EA1646;
+ 	text-align: center;
+ }
+  /* Portfolio paragraph */
+ .portpara {
+  	margin-bottom: 0.6em;
+ 	text-align: center;
+ 	color: #333;
+ 	font-size: 2em;
+ 	font-weight: bold;
+ }
+ .jumbotron {
+ 	background-color: white;
+ }
+ /* End style for carousel */
+  .carousel-control {
+ 	border: none;
+ 	background: none;
+ 	padding: 0;
+ }
+ /* about section */
+  /* Title in about section */
+ .abouttitle {
+ 	padding: 0;
+ 	margin-top: 0.6em;
+ 	font-size: 4em;
+ 	font-weight: bold;
+ 	color: #EA1646;
+ 	text-align: center;
+ }
+  /* About paragraph under title*/
+ .paraabout {
+ 	margin-bottom: 0.5em;
+ 	text-align: center;
+ 	color: #333;
+ 	font-size: 2em;
+ 	font-weight: bold;
+ }
+  /* Images row, */
+ .img-about1, .img-about2 {
+ 	width: 50px;
+ 	height: 50px;
+ 	margin: 0.2em;
+ }
+ .img-about3 {
+ 	height: 20px;
+ 	 margin: 0.2em;
+ 	 margin-top: 0.8em;
+ }
+ .img-about4 {
+ 	height: 40px;
+ 	 margin: 0.2em;
+ }
+  /* end of row images logo*/
+ /* Big paragraph portfiolio */
+ .info {
+ 	font-size: 1.3em;
+ 	margin-right: 8%;
+ 	margin-left: 8%;
+ }
+.heart {
+	display: block;
+	text-align: center;
+	color:red;
+	font-size: 20px;
+}
+/* END OF ABOUT */
+/* CONTACT */
+/* CONTACT TITLE */
+.contacttitle {
+ 	padding: 0;
+ 	margin-top: 0.6em;
+ 	font-size: 4em;
+ 	font-weight: bold;
+ 	color: #EA1646;
+ 	text-align: center;
+ }
+.contactpara {
+ 	margin-bottom: 0.6em;
+ 	text-align: center;
+ 	color: #333;
+ 	font-size: 2em;
+ 	font-weight: bold;
+ }
+.logos {
+   margin: 1em;
+}
+.social {
+	background-color: #333;
+	box-shadow: 0px 5px 2px #888, 0px -4px 3px #888;
+	padding-bottom: 2px;
+}
+.logos1:hover {
+	animation: moveBump 0.5s;
+}
+.logos2:hover {
+	animation: moveBump 0.5s;
+}
+.logos3:hover {
+	animation: moveBump 0.5s;
+}
+.logos4:hover {
+	animation: moveBump 0.5s;
+}
+.logos5:hover {
+	animation: moveBump 0.5s;
+}
+.logos6:hover {
+	animation: moveBump 0.5s;
+}
+.logos7:hover {
+	animation: moveBump 0.5s;
+}
+@keyframes moveBump {
+	0% {width: 50px; height: 50px; }
+	50% {width: 60px; height: 52px; }
+	100% {width: 50px; height: 50px; }
+
+}
+.imgs {
+	display: block;
+	margin: 0 auto;
+}
+  /* Images row, */
+ .img-aboutx1, .img-aboutx2 {
+ 	width: 10em;
+ 	height: 10em;
+ 	margin: 0.4em;
+ }
+ .img-aboutx4 {
+ 	width: 10em;
+ 	height: 10em;
+ 	 margin: 0.4em;
+ }
+ /* ANIMATION OF SKILLS */
+ .box:hover {
+    animation: fadeInn 2s infinite;
+ }
+ @keyframes fadeInn {
+ 	25% {
+
+ 		opacity: 0.7;;
+ 	}
+ 	100% {
+ 		opacity: 1;
+ 	}
+ }
+ .fcc:hover {
+ 	text-decoration: none;
+ }
+
+ @media screen and (max-width: 713px) {
+	  li a {
+			padding: 5px;
+		}
+		.list-items {
+			margin: 0 7% 0 7%;
+		}
+		.bk {
+			min-height: 750px;
+		}
+		.title {
+			margin-top: 25%;
+		}
+		.para {
+			 	margin: 2% 10% 2% 10%;
+		}
+		.cimg {
+			min-height: 200px;
+			min-width: auto;
+		}
+		.logos {
+			height: 30px;
+			width: 30px;
+		}
+		.logos1:hover {
+			animation: shadow 0.5s;
+		}
+		.logos2:hover {
+			animation: shadow 0.5s;
+		}
+		.logos3:hover {
+			animation: shadow 0.5s;
+		}
+		.logos4:hover {
+			animation: shadow 0.5s;
+		}
+		.logos5:hover {
+			animation: shadow 0.5s;
+		}
+		.logos6:hover {
+			animation: shadow 0.5s;
+		}
+		.logos7:hover {
+			animation: shadow 0.5s;
+		}
+		@keyframes shadow {
+			0% {
+				background-color: white;
+				border-top-right-radius: 70%;
+				border-top-left-radius: 70%;
+				border-bottom-left-radius: 70% ;
+				border-bottom-right-radius: 70%;
+				box-shadow: 3px 3px 3px black;
+			}
+			50% {box-shadow: 2px 2px 2px black; }
+			100% {box-shadow: 1px 1px 1px black; }
+
+		}
+ }
+ @media screen and (max-width: 522px) {
+	 .list-items {
+		 margin: 0 0px 0 0px;
+	 }
+
+
+ }
+@media screen and (max-width: 452px ) {
+
+	.hideimg {
+		visibility: hidden;
+		position: absolute;
+	}
+	.logo {
+		display: none;
+		width: 0px;
+		height: 0px;
+		margin: 0px;
+		padding: 0px;
+		position: absolute;
+	}
+	.list-items, ul {
+		padding: 0;
+		margin-right: 5%;
+	}
+}
+@media screen and (max-width: 500px ) {
+	ul {
+		display: none;
+		visibility: hidden;
+		position: absolute;
+	}
+	.hideimg {
+		visibility: hidden;
+		position: absolute;
+	}
+	.hid {
+		display: none;
+		visibility: hidden;
+		position: absolute;
+
+	}
+	.logo {
+		display: none;
+		width: 0px;
+		height: 0px;
+		margin: 0px;
+		padding: 0px;
+		position: absolute;
+	}
+	.list-items, ul {
+		padding: 0;
+		margin-right: 7%;
+	}
+	body {
+		overflow-x: hidden !important;
+
+	}
+	.well {
+		margin: 0px ;
+	}
+   .logos {
+		 margin: 0.4em;
+		 overflow-x: hidden;
+	 }
+	}
+}

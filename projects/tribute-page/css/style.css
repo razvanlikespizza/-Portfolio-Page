@@ -1,0 +1,98 @@
+body {
+  margin: 60px 200px 60px 200px;
+}
+.title {
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+.title1 {
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+}
+.underline {
+  width: 10%;
+  border-top: 1px solid #595959;
+}
+.logo {
+  overflow: hidden;
+  width: 370px;
+  center: block;
+  background-color: white;
+  margin: auto;
+ adding-right: 30px;
+}
+.container {
+  max-width: 415px;
+  max-height: 580px;
+  center: block;
+  margin: auto;
+  background-color: white;
+
+}
+ul {
+  margin: 0 auto;
+  padding-left: 120px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+}
+.diografie {
+  text-decoration: overline;
+  font-family: 'Josefin Sans', sans-serif;
+  padding-top: 50px;
+  padding-left: 100px;
+}
+.subcont {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 8px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.readmore {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 30px;
+  
+}
+.btn {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 900px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+  .body{
+    margin: 0 auto;
+    padding: 0;
+  }
+  .logo {
+    width: 100%;
+    height: auto;
+    
+  }
+  body {
+  margin: 0 auto;
+    width: 70%;
+}
+ul {
+  margin:0 auto;
+  padding:0;
+  text-align: left;
+  
+  font-family: 'Josefin Sans',
+  }
+  .diografie {
+  margin:20px auto 20px;;
+  padding:0;
+   font-size: 26px;
+  text-decoration: overline;
+  font-family: 'Josefin Sans'
+    text-align: left;
+  }
+.underline {
+  width: 10%;
+  border-top: 1px solid #595959;
+}
