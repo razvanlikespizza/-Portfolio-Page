@@ -1,0 +1,19 @@
+{
+  "name": "weather-app",
+  "description": "FCC weather app project.",
+  "scripts": {
+    "start": "npm run gulp && concurrently \"npm run gulp-watch\" \"npm run lite\"",
+    "lite": "lite-server",
+    "gulp": "gulp",
+    "gulp-watch": "gulp watch"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "lite-server": "^2.3.0"
+  },
+  "dependencies": {
+    "normalize.css": "^7.0.0"
+  }
+}

@@ -1,0 +1,493 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  overflow: hidden;
+}
+
+.background {
+  background: linear-gradient(#414345, #232526);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.background-sunny {
+  background: url("../img/backgrounds/sunny.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.background-rainy {
+  background: url("../img/backgrounds/rainy.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background-snowy {
+  background: url("../img/backgrounds/snowy.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background-cloudy {
+  background: url("../img/backgrounds/cloudy.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background-windy {
+  background: url("../img/backgrounds/windy.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background-mist {
+  background: url("../img/backgrounds/mist.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .alert {
+    display: none;
+    visibility: hidden;
+  }
+  .menu {
+    height: 100%;
+    width: 45px;
+    background-color: #111;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+  }
+  .under {
+    height: 100%;
+    width: 45px;
+    display: block;
+    display: inline-block;
+  }
+  .logos {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .logos img {
+    margin: 30px 0;
+  }
+  .selector {
+    width: 5px;
+    height: 50px;
+    position: fixed;
+    background-color: white;
+    top: 10%;
+    left: -8px;
+    z-index: 2;
+    transform: translateY(-10%);
+    transition: all 0.5s ease;
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+}
+  .weather {
+    float: right;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(rgba(0, 0, 0, 0.6)5%, rgba(0, 0, 0, 0.1))90%;
+    padding-left: 45px;
+    color: white;
+    text-align: center; 
+}
+  .search {
+    position: relative;
+    width: 90%;
+    margin: 10px auto;
+  }
+  .enter-location {
+    border: none;
+    display: block;
+    outline: 0;
+    background-image: white;
+    width: 100%;
+    padding: 9px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  .enter-location::placeholder {
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+  }
+  .search span {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: rgb(39, 39, 39);
+    font-size: 15px;
+  }
+  .magnifier {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .today-weather {
+    position: relative;
+    top: 30%;
+    transform: translateY(-30%);
+  }
+  .more-info {
+    transform: translateY(60%);
+    color: grey;
+    background-color: white;
+    margin: 5%;
+    position: relative;
+    transition: all 0.3s ease;
+    visibility: hidden;
+  }
+  .settings {
+    position: relative;
+    transform: translateY(-60%);
+    color: grey;
+    background-color: white;
+    margin: 5%;
+    position: relative;
+    transition: all 0.3s ease;
+    visibility: hidden;
+  }
+  .title, .info {
+    font-family: "Open Sans", sans-serif;
+  }
+  .title {
+    margin: 0;
+    margin-top: 5px;
+  }
+  .info {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .more-info {
+    display: block;
+    position: absolute;
+    top: 0px;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  .info-more {
+    font-size: calc( 20px + (24 - 16) * (100vw - 400px) / (800 - 400) );
+    font-weight: 300;
+    color: #111;
+  }
+  .settings {
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    color: #111;
+  }
+  .settings .text {
+    margin: 5px 0;
+  }
+  .set-title {
+    font-weight: 300;
+    color:  #111;
+    padding: 10px 10%;
+    font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) );
+  }
+  /* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: rgb(39, 39, 39);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px rgb(39, 39, 39);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+} 
+}
+@media screen and (min-width: 768px) {
+  .alert {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(173, 47, 47);
+    position: fixed;
+    z-index: 999;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    font-size: calc( 40px + (24 - 16) * (100vw - 400px) / (800 - 400) );
+  }
+  .alert p {
+    position: relative;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .x-button {
+    display: block;
+    margin-top: 5%;
+    cursor: pointer;
+  }
+  .menu {
+    height: 100%;
+    width: 45px;
+    background-color: #111;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+  }
+  .under {
+    height: 100%;
+    width: 45px;
+    display: block;
+    display: inline-block;
+  }
+  .logos {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .logos img {
+    margin: 30px 0;
+  }
+  .selector {
+    width: 5px;
+    height: 50px;
+    position: fixed;
+    background-color: white;
+    top: 10%;
+    left: -8px;
+    z-index: 2;
+    transform: translateY(-10%);
+    transition: all 0.5s ease;
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+}
+  .weather {
+    float: right;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(rgba(0, 0, 0, 0.6)5%, rgba(0, 0, 0, 0.1))90%;
+    padding-left: 45px;
+    color: white;
+    text-align: center; 
+}
+  .search {
+    position: relative;
+    width: 90%;
+    margin: 10px auto;
+  }
+  .enter-location {
+    border: none;
+    display: block;
+    outline: 0;
+    background-image: white;
+    width: 100%;
+    padding: 9px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  .enter-location::placeholder {
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+  }
+  .search span {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: rgb(39, 39, 39);
+    font-size: 15px;
+  }
+  .magnifier {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .today-weather {
+    position: relative;
+    top: 30%;
+    transform: translateY(-30%);
+  }
+  .more-info {
+    transform: translateY(60%);
+    color: grey;
+    background-color: white;
+    margin: 5%;
+    position: relative;
+    transition: all 0.3s ease;
+    visibility: hidden;
+  }
+  .settings {
+    position: relative;
+    transform: translateY(-60%);
+    color: grey;
+    background-color: white;
+    margin: 5%;
+    position: relative;
+    transition: all 0.3s ease;
+    visibility: hidden;
+  }
+  .title, .info {
+    font-family: "Open Sans", sans-serif;
+  }
+  .title {
+    margin: 0;
+    margin-top: 5px;
+  }
+  .info {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .more-info {
+    display: block;
+    position: absolute;
+    top: 0px;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  .info-more {
+    font-size: calc( 20px + (24 - 16) * (100vw - 400px) / (800 - 400) );
+    font-weight: 300;
+    color: #111;
+  }
+  .settings {
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    color: #111;
+  }
+  .settings .text {
+    margin: 5px 0;
+  }
+  .set-title {
+    font-weight: 300;
+    color:  #111;
+    padding: 10px 10%;
+    font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) );
+  }
+  /* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: rgb(39, 39, 39);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px rgb(39, 39, 39);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+}

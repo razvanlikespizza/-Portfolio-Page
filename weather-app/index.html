@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Weather App | Razvan</title>
+  <!-- META -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- STYLES -->
+  <link rel="stylesheet" href="css-index/normalize.css">
+  <link rel="stylesheet" href="css-index/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css-index/animate.css">
+  <!-- OPEN GRAPH -->
+  <meta property="og:url" content="https://www.razvanel.cf/weather-app/">
+  <meta property="og:title" content="Weather App | Razvan">
+  <meta property="og:image" content="https://www.razvanel.cf/thumbnails/weather.png/">
+  <meta property="og:description" content="Weather App created by Razvan, a freeCodeCamp project.">
+  <meta property="fb:app_id" content="1743767732599089">
+</head>
+<body class="background">
+
+  <div class="alert"><p>This website is not optimised for your device.Please resize this window or use a mobile device.<br /><span class="fa fa-window-close x-button" onclick="getOut()" aria-hidden="true"></span></p></div>
+  <div class="container">
+    <div class="menu"> 
+      <div class="logos">
+        <div class="selector" id="selector"></div>
+        <div class="img-menu">
+          <img onclick="arrowMoveHome()" src="img/homeicon.png" height="30px" width="30px"/>
+        </div>
+        <div class="img-menu">
+          <img onclick="arrowMoveCalendar()"src="img/dotsicon.png" height="30px" width="30px" />
+        </div>
+        <div class="img-menu">
+          <img onclick="arrowMoveSettings()" src="img/settingsicon.png" height="30px" width="30px" />
+        </div>
+      </div>
+    </div>
+      <div class="weather">
+        <div class="search">
+          <input type="text" class="enter-location" placeholder="Enter your location"/><span onclick="searchIt()" class="fa fa-search"></span>
+        </div>
+        <div class="today-weather animated fadeIn">
+          <img class="icon" src="img/icons/cloud-edited.png" alt="" width="135px" height="85px">
+          <h1 class="title"></h1>
+          <h2 class="info celcius"></h2>
+      </div>
+      <div class="more-info">
+        <h2 class="info-more celcius"></h2>
+    </div>
+    <div class="settings">
+      <h1 class="set-title">App created by Razvan. All rights reversed &copy;<br /><br />
+      I know it has some bugs, it's not perfect...but this is all I could do.</h1>
+      <p class="text">You prefer fahrenheit?</p>
+      <label class="switch">
+        <input type="checkbox" class="myInput celcius">
+        <span class="slider round"></span>
+      </label>
+      <h2 class=""></h2>
+  </div>
+    </div>
+  </div>
+  </div>
+</body>
+<script src="js/menu.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="js/api_get_index.js"></script>
+</html>
