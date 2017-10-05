@@ -286,6 +286,9 @@ input:checked + .slider:before {
     margin-top: 5%;
     cursor: pointer;
   }
+  .disclaimer {
+    font-size: 14px !important;
+  }
   .menu {
     height: 100%;
     width: 45px;
