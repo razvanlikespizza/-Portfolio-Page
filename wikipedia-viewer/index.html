@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Wikipedia Viewer | Razvan</title>
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- STYLES -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- OPEN GRAPH -->
+    <meta property="og:url" content="https://www.razvanel.cf/wikipedia-viewer/">
+    <meta property="og:title" content="Wikipedia Viewer | Razvan">
+    <meta property="og:image" content="https://www.razvanel.cf/thumbnails/wikipedia.png/">
+    <meta property="og:description" content="Wikipedia Viewer created by Razvan, a freeCodeCamp project.">
+    <meta property="fb:app_id" content="543849352673807">
+  </head>
+</head>
+<body>
+    <div class="container">
+        <div class="test">
+        <h1 class="wiki">Wikipedia Viewer</h1>
+    </div>
+        <div class="input">
+            <input type="text" onblur="this.placeholder = 'Type here...'" onfocus="this.placeholder = '';" placeholder="Type here..." class="input-text"/><span class="fa fa-search"></span>
+        </div>
+        <div class="button">
+            <a target="_blank" href="https://en.wikipedia.org/wiki/Special:Random" class="random-button">random</a>
+        </div>
+        <p class="error">No results found</p>
+        <!--<div class="box">
+            <h1 class="title">This title</h1>
+            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora exercitationem amet porro molestiae ipsam reiciendis est esse omnis, ut mollitia quo eius ullam error repellat voluptas hic voluptatibus ratione nesciunt?</p>
+        </div> -->
+        <div class="cases">
+        <div class="result0"></div>        
+        <div class="result1"></div>
+        <div class="result2"></div>
+        <div class="result3"></div>
+        <div class="result4"></div>
+        <div class="result5"></div>
+        <div class="result6"></div>
+        <div class="result7"></div>
+        <div class="result8"></div>
+        </div> 
+        <p class="copy">App created by Razvan. All rights reserved ©</p>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="js/get_api.js"></script>
+</html>
