@@ -1,0 +1,224 @@
+$daisy-bush: #461B93;
+$studio: #6A3CBC;
+$medium-purple: #8253D7;
+$tree-poppy: #F78F1E;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Mukta", sans-serif;
+}
+html,
+body {
+    font-family: "Mukta", sans-serif;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+}
+a {
+    text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+    .container,
+    body {
+        width: 100%;
+        height: 100%;
+        background-color: $daisy-bush;
+    }
+    .title {
+        margin: 50px 0;
+        margin-bottom: 20px;
+        position: relative;
+        display: inline-block;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .underline {
+        position: absolute;
+        width: 30%;
+        height: 3px;
+        background-color: white;
+        border-radius: 5px;
+        top: 90%;
+        left: 8px;
+    }
+    .title-text {
+        margin: 0;
+        font-weight: 200;
+        font-size: 3.5rem;
+        color: white;
+    }
+    .box {
+        box-shadow: 2px 2px 15px rgba($color: #000000, $alpha: 0.3);
+        border-radius: 5px;
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        background-color: $tree-poppy;
+        padding: 6px;
+        margin-bottom: 10px;
+    }
+    .box > * {
+        vertical-align: middle;
+    }
+    .logo {
+        padding: 2px;
+        box-shadow: 2px 2px 15px rgba($color: #000000, $alpha: 0.3);
+        border-radius: 30px;
+        width: 60px;
+    }
+    .box-title {
+        display: inline-block;
+        color: white;
+        font-weight: 400;
+        font-size: 1.5rem;
+        margin-left: 10px;
+    }
+    .box-description {
+        text-align: center;
+        font-weight: 700;
+        color: $studio;
+    }
+    .online {
+        box-shadow: 2px 2px 5px rgba($color: #000000, $alpha: 0.3);
+        display: inline-block;
+        position: relative;
+        border-radius: 50%;
+        margin-left: 5px;
+        width: 15px;
+        height: 15px;
+        background-color: #27ae60;
+    }
+    .offline {
+        box-shadow: 2px 2px 5px rgba($color: #000000, $alpha: 0.3);
+        display: inline-block;
+        position: relative;
+        border-radius: 50%;
+        margin-left: 5px;
+        width: 15px;
+        height: 15px;
+        background-color: #e74c3c;
+    }
+    .filter {
+        text-align: center;
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .filter p {
+        transition: all 0.3s ease;
+        font-size: 1.7rem;
+        text-transform: lowercase;
+        display: inline;
+        color: white;
+        font-weight: 600;
+        padding: 0 5%;
+    }
+    .filter p:hover {
+        color: $daisy-bush;
+        background-color: white;
+        transition: all 0.3s ease;
+    }
+}
+@media screen and (min-width: 768px) {
+    .container,
+    body {
+        width: 100%;
+        height: 100%;
+        background-color: $daisy-bush;
+    }
+    .title {
+        margin: 50px 0;
+        margin-bottom: 20px;
+        position: relative;
+        display: inline-block;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .underline {
+        position: absolute;
+        width: 30%;
+        height: 3px;
+        background-color: white;
+        border-radius: 5px;
+        top: 90%;
+        left: 8px;
+    }
+    .title-text {
+        margin: 0;
+        font-weight: 200;
+        font-size: 3.5rem;
+        color: white;
+    }
+    .box {
+        box-shadow: 2px 2px 15px rgba($color: #000000, $alpha: 0.3);
+        border-radius: 5px;
+        display: block;
+        width: 60%;
+        margin: 0 auto;
+        background-color: $tree-poppy;
+        padding: 6px;
+        margin-bottom: 10px;
+    }
+    .box > * {
+        vertical-align: middle;
+    }
+    .logo {
+        padding: 2px;
+        box-shadow: 2px 2px 15px rgba($color: #000000, $alpha: 0.3);
+        border-radius: 30px;
+        width: 60px;
+    }
+    .box-title {
+        display: inline-block;
+        color: white;
+        font-weight: 400;
+        font-size: 1.5rem;
+        margin-left: 10px;
+    }
+    .box-description {
+        text-align: center;
+        font-weight: 700;
+        color: $studio;
+    }
+    .online {
+        box-shadow: 2px 2px 5px rgba($color: #000000, $alpha: 0.3);
+        display: inline-block;
+        position: relative;
+        border-radius: 50%;
+        margin-left: 5px;
+        width: 15px;
+        height: 15px;
+        background-color: #27ae60;
+    }
+    .offline {
+        box-shadow: 2px 2px 5px rgba($color: #000000, $alpha: 0.3);
+        display: inline-block;
+        position: relative;
+        border-radius: 50%;
+        margin-left: 5px;
+        width: 15px;
+        height: 15px;
+        background-color: #e74c3c;
+    }
+    .filter {
+        text-align: center;
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .filter p {
+        transition: all 0.3s ease;
+        font-size: 1.7rem;
+        text-transform: lowercase;
+        display: inline;
+        color: white;
+        font-weight: 600;
+        padding: 0 30px;
+    }
+    .filter p:hover {
+        color: $daisy-bush;
+        background-color: white;
+        transition: all 0.3s ease;
+    }
+}
