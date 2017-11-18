@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Calculator | Razvan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+	<!-- OPEN GRAPH -->
+	<meta property="og:url" content="https://www.razvanel.pw/javascript-calculator/">
+	<meta property="og:title" content="JavaScript Calculator | Razvan">
+	<meta property="og:image" content="https://www.razvanel.pw/thumbnails/calculator.png/">
+	<meta property="og:description" content="JavaScript Calculator created by Razvan, a freeCodeCamp project.">
+</head>
+<body>
+  <div class="calculator">
+  <div class="myInput">
+    <h1 id="input"></h1>
+  </div>
+  <div class="body">
+    <div class="box box1" onclick="clearIt()">
+      <span>C</span>
+    </div>
+    <div class="box box2 fa fa-2x fa-arrow-left" onclick="backspaceIt()">
+      <!--    backspace   - -->
+    </div>
+    <div class="box box7" onclick="symIt(this.id)" id="/">
+      <span>/</span>
+    </div>
+    <div class="box box9" onclick="addNum(this.firstElementChild.innerHTML)">
+      <span>1</span>
+    </div>
+    <div class="box box10" onclick="addNum(this.firstElementChild.innerHTML)">
+      <span>2</span>
+    </div>
+    <div class="box box11" onclick="addNum(this.firstElementChild.innerHTML)">
+      <span>3</span>
+    </div>
+    <div class="box box4 fa fa-2x fa-times" onclick="symIt(this.id)" id="*">
+      <!--    times   - -->
+    </div>
+    <div class="box box12" onclick="addNum(this.firstElementChild.innerHTML)">
+      <span>4</span>
+    </div>
+    <div class="box box13" onclick="addNum(this.firstElementChild.innerHTML)">
+      <span>5</span>
+    </div>
+    <div class="box box14" onclick="addNum(this.firstElementChild.innerHTML)">
+      <span>6</span>
+    </div>
+    <div class="box box3 fa fa-2x fa-plus" onclick="symIt(this.id)" id="+">
+      <!--    plus   - -->
+    </div>
+    <div class="box box15" onclick="addNum(this.firstElementChild.innerHTML)">
+      <span>7</span>
+    </div>
+    <div class="box box16" onclick="addNum(this.firstElementChild.innerHTML)">
+      <span>8</span>
+    </div>
+    <div class="box box17" onclick="addNum(this.firstElementChild.innerHTML)">
+      <span>9</span>
+    </div>
+    <div class="box box5 fa fa-2x fa-minus" onclick="symIt(this.id)" id="-">
+    <!--    minus   - -->
+    </div>
+    <div class="box box8" onclick="addZero(this.firstElementChild.innerHTML)">
+      <span>0</span>
+    </div>
+    <div class="box box6 fa fa-circle" onclick="periodIt(this.id)" id=".">
+      <!--    period   - -->
+    </div>
+    <div class="box box18" onclick="equalIt()">
+      <!--    equal   - -->
+      <span>=</span>
+    </div>
+  </div>
+</div>
+	<script  src="js/index.js"></script>
+</body>
+</html>
