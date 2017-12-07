@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+html {
+  font-size: calc(12px + (24 - 12)*((100vmin - 400px)/(800 - 400)));
+}
+html, body {
+  width: 100%;
+}
+body {
+  background-color: #242424;
+  color: white;
+  font-family: "Lato", sans-serif;
+}
+#container {
+  display: block;
+  max-width: 60%;
+  max-height: 90%;
+  margin: 0 auto;
+}
+.square {
+  width: 30%;
+  margin: 1.66%;
+  float: left;
+  padding-bottom: 30%;
+  background: linear-gradient(#0f0c29, #302b63);
+  transition: all ease 0.3s;
+}
+#info {
+  text-align: center;
+  padding: 1rem 0;
+}
+.title {
+  font-size: 2rem;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+.nav {
+   background-color: white;
+   color: black;
+   margin-bottom: 2%;
+   height: 6rem;
+   text-align:  center;
+}
+#button_new,
+.mode {
+  border: 3px solid #242424;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+#button_new {
+  float: left;
+}
+.mode {
+  float: right;
+}
+#message {
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+.center {
+  text-align:  center;
+  max-width: 800px;
+  display: block;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.selected {
+  background-color: #242424;
+  color: white;
+}
+@media screen and (max-width: 500px) {
+  #container {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+  }
+  .title {
+    font-size: 3rem;
+    line-height: 100%;
+    font-weight: 100;
+  }
+  #rgb {
+    font-size: 3.5rem;
+  }
+  #button_new,
+  .mode {
+    height: 6rem;
+    font-size: 1.2rem;
+    border: 3px solid #242424;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  #button_new {
+    float: left;
+  }
+  .mode {
+    float: right;
+  }
+  #message {
+    display: inline-block;
+  }
+  .center {
+    text-align:  center;
+    max-width: 800px;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
